@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/titlerelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FD8914"
+        android:gravity="center_vertical"
+        >
+      
+    <ImageView 
+        android:layout_width = "wrap_content"
+    	android:layout_height="match_parent"
+    	android:src="@drawable/ic_left"
+    	android:orientation="horizontal"
+   		android:id="@+id/search_back"
+    	android:paddingLeft="@dimen/content_horizontal_margin"
+    	android:paddingRight="@dimen/content_horizontal_margin"
+    	android:layout_centerVertical="true"
+	/>
+    <TextView
+        android:id="@+id/search_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "搜索"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight = "10dp"
+        android:layout_centerVertical="true"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/search_back"
+        android:layout_toLeftOf="@id/search_save"
+        android:background="@drawable/yuanjiaoedittextsytle"
+        android:alpha="0.4"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/bg_ll"
+        />
+	  
+      <EditText
+          android:id="@+id/et_search"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignLeft="@+id/bg_ll"
+          android:layout_toLeftOf="@id/search_save"
+          android:layout_margin="8dp"
+          android:singleLine="true"
+          android:background="@null"
+          android:layout_alignParentTop="true"
+          android:hint="请输入故事名称"
+          android:drawableLeft="@drawable/search_image"
+          android:textColor="#ffffff"
+          android:textSize="16sp" >
+      </EditText>
+      <ImageView 
+          android:id="@+id/search_cha"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/search_cha"
+          android:layout_marginRight="5dp"
+          android:layout_alignRight="@id/bg_ll"
+          android:visibility="gone"
+          android:layout_centerVertical="true"
+          />
+    </RelativeLayout>
+	<GridView 
+	    android:id="@+id/gv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/content_horizontal_margin"
+        android:layout_marginRight="@dimen/content_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:verticalSpacing="5dp"
+	    />
+</LinearLayout>

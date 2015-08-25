@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/titlerelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FD8914"
+        android:gravity="center_vertical"
+        >      
+        <TextView
+            android:id="@+id/Login_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="设置教材"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+            android:textSize="19sp" 
+            />
+        <TextView
+            android:id="@+id/settextbook_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "跳过"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight = "10dp"
+            android:layout_alignBottom="@id/Login_title_txt"
+            />
+    </RelativeLayout>
+    
+   	<Button 
+    	android:id="@+id/settextbook_okbt"
+    	android:layout_width="match_parent"
+        android:layout_height="wrap_content"	 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft ="40dp"
+        android:layout_marginRight ="40dp"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:background="@drawable/normalbuttonstyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+	    />
+	 <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:id="@+id/textbookListTitle"
+	    android:layout_below="@id/titlerelativelayout"
+	    android:paddingTop="8dp"
+	    android:paddingBottom="8dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/city" 
+	        android:text = "地区"
+	        android:gravity="center"
+	        android:textColor="#555555"
+	        android:layout_weight="1"
+	        android:textSize = "16sp"/>
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/grade"
+	        android:text = "年级" 
+	        android:gravity="center"
+	       	android:textColor="#555555"
+	        android:layout_weight="1"
+	        android:textSize = "16sp"/>
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/course" 
+	        android:text = "科目"
+	        android:gravity="center"
+	        android:textColor="#555555"
+	        android:layout_weight="1"
+	        android:textSize = "16sp"/>
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/version"
+	        android:text = "教材版本" 
+	        android:gravity="center"
+	        android:textColor="#555555"
+	        android:layout_weight="1"
+	        android:textSize = "16sp"/>
+	</LinearLayout>
+	<View 
+	    android:id="@+id/hexian"
+	    android:layout_height="1px" 
+	    android:background="#848484" 
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/textbookListTitle"/>
+
+	<ListView
+	    android:id="@+id/settextbook_listview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/hexian"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginTop="5dp" />
+	    
+	    <!-- <LinearLayout 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:id="@+id/wheels"
+		    android:layout_below="@id/hexian"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="5dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		>
+	        
+	        <kankan.wheel.widget.WheelView
+	            android:id="@+id/wheel_city"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" >
+	        </kankan.wheel.widget.WheelView>
+
+	        <kankan.wheel.widget.WheelView
+	            android:id="@+id/wheel_grade"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" >
+	        </kankan.wheel.widget.WheelView>
+
+	        <kankan.wheel.widget.WheelView
+	            android:id="@+id/wheel_version"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" >
+	        </kankan.wheel.widget.WheelView>
+	        
+	        <kankan.wheel.widget.WheelView
+	            android:id="@+id/wheel_course"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" >
+	        </kankan.wheel.widget.WheelView>
+	    </LinearLayout> -->
+
+</RelativeLayout>

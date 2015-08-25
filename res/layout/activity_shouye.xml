@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/index_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/titlerelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FD8914"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:id="@+id/shouye_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src = "@drawable/ic_search"
+            android:layout_marginLeft ="@dimen/content_horizontal_margin"
+            android:layout_centerVertical="true" /> 
+             
+        <TextView
+            android:id="@+id/Login_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="听故事学知识"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+            android:textSize="19sp" 
+            />
+        <ImageView
+            android:id="@+id/shouye_sanxian"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src = "@drawable/ic_sanxian"
+            android:layout_marginRight="@dimen/content_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />   
+    </RelativeLayout>
+	<ScrollView     
+	    android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_marginLeft="@dimen/content_horizontal_margin"
+		android:layout_marginRight="@dimen/content_horizontal_margin">
+        <LinearLayout 
+            android:layout_width="match_parent"
+   			android:layout_height="wrap_content"
+   			android:orientation="vertical">
+		    <LinearLayout 
+		        android:layout_width = "match_parent"
+		        android:layout_height="52dp"
+		        android:gravity="center_vertical"
+		        android:orientation="horizontal"
+		        >
+		        <TextView 
+		           	android:layout_width = "wrap_content"
+		       		android:layout_height="wrap_content" 
+		       		android:id="@+id/shouye_partone_title"
+		       		android:text = "最新首发"
+		       		android:textSize="18sp"
+		       		android:textColor="#3c3d3d"/>
+		        
+		            <TextView 
+			           	android:layout_width = "wrap_content"
+			       		android:layout_height="wrap_content" 
+			       		android:text = "更多首发"
+			       		android:textSize="14sp"
+			       		android:id = "@+id/shouye_shoufa_more_bt"
+			       		android:textColor="#9e9f9f"
+			       		android:gravity="right"
+			       		android:drawableRight="@drawable/ic_right"
+			       		android:drawablePadding="5dp"/>
+		        </LinearLayout>
+		    <com.yang.MyView.MyGridView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="@dimen/content_horizontal_margin"
+		        android:layout_marginRight="@dimen/content_horizontal_margin"
+		        android:id="@+id/shouye_shoufa_gv"
+		        android:numColumns="2"
+		        android:horizontalSpacing = "10dp"
+		        />
+		      <LinearLayout 
+		        android:layout_width = "match_parent"
+		        android:layout_height="52dp"
+		        android:gravity="center_vertical"
+		        >
+		        <TextView 
+		           	android:layout_width = "wrap_content"
+		       		android:layout_height="wrap_content" 
+		       		android:id="@+id/shouye_zuire_title"
+		       		android:text = "最热故事"
+		       		android:textSize="18sp"
+		       		android:textColor="#3c3d3d"/>
+	            <TextView 
+		           	android:layout_width = "wrap_content"
+		       		android:layout_height="wrap_content" 
+		       		android:text = "更多最热"
+		       		android:textSize="14sp"
+		       		android:id = "@+id/shouye_zuire_more_bt"
+		       		android:textColor="#9e9f9f"
+		       		android:gravity="right"
+		       		android:drawableRight="@drawable/ic_right"
+		       		android:drawablePadding="5dp"/>
+		        </LinearLayout>
+		    <com.yang.MyView.MyGridView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="@dimen/content_horizontal_margin"
+		        android:layout_marginRight="@dimen/content_horizontal_margin"
+		        android:id="@+id/shouye_zuire_gv"
+		        android:numColumns="2"
+		        android:horizontalSpacing = "10dp"
+		        />
+		    <LinearLayout 
+		        android:layout_width = "match_parent"
+		        android:layout_height="52dp"
+		        android:orientation="horizontal"
+		        android:gravity="center_vertical"
+		        >
+		        <TextView 
+		           	android:layout_width = "wrap_content"
+		       		android:layout_height="wrap_content" 
+		       		android:text = "按科目浏览"
+		       		android:textSize="18sp"
+		       		android:textColor="#3c3d3d"/>
+		    </LinearLayout>
+		    
+		    <com.yang.MyView.MyGridView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="@dimen/content_horizontal_margin"
+		        android:layout_marginRight="@dimen/content_horizontal_margin"
+		        android:id="@+id/shouye_kumu_gv"
+		        android:numColumns="3"
+		        android:horizontalSpacing = "10dp"
+		        android:verticalSpacing="10dp"
+		 
+		        />
+	  	</LinearLayout>
+    </ScrollView>
+</LinearLayout>

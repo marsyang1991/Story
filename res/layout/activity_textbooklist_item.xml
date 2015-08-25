@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+	android:paddingBottom="10dp"
+    tools:context="com.yang.story.WelcomeActivity"
+    android:orientation="horizontal"
+    android:id="@+id/textbookListItemLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/city" 
+        android:text = "地区"
+        android:gravity="center"
+        android:textColor="#848484"
+        android:layout_weight="1"
+        android:textSize = "13sp"/>
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grade"
+        android:text = "年级" 
+        android:gravity="center"
+       	android:textColor="#848484"
+        android:layout_weight="1"
+        android:textSize = "13sp"/>
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/course" 
+        android:text = "科目"
+        android:gravity="center"
+        android:textColor="#848484"
+        android:layout_weight="1"
+        android:textSize = "13sp"/>
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/version"
+        android:text = "教材版本" 
+        android:gravity="center"
+        android:textColor="#848484"
+        android:layout_weight="1"
+        android:textSize = "13sp"/>
+</LinearLayout>

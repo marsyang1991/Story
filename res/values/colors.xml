@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name = "index_bg">#F2F4F5</color>
+    <color name = "index_tab_bg">#F7F7F8</color>
+    <color name = "index_tab_hengxian">#C3C3C3</color>
+    <color name = "frame_selsected_no">#585c68</color>
+    <color name = "frame_selsected_yes">#f68720</color>
+</resources>

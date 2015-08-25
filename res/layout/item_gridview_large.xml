@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+	<ImageView
+	    android:layout_width="match_parent"
+    	android:layout_height="105dp"
+    	android:id="@+id/gv_image"
+    	android:scaleType="fitXY"
+    	/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:textColor="#6d6d6e"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:text = "八百壮士守四行"
+        android:id="@+id/gv_txt"/>
+
+</LinearLayout>

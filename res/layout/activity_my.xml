@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:background="@drawable/bg_my_title"
+        >
+	<LinearLayout
+	    android:id="@+id/touxianglayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	    >
+        <ImageView
+            android:id="@+id/my_title_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/bg_my_user"
+            android:src = "@drawable/ic_default_touxiang" />
+        <TextView 
+            android:id="@+id/my_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:text = "点击登录"
+            android:textColor = "#ffffff"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+	    >
+	    <RelativeLayout 
+	       	android:layout_width="match_parent"
+        	android:layout_height="60dp"
+        	android:gravity="center_vertical"
+        	>
+	        <ImageView 
+	            android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:id = "@+id/ic_my_my"
+        		android:src = "@drawable/ic_my_my"
+        		android:layout_marginLeft = "5dp"
+        		android:layout_centerVertical="true"
+        		/>
+	        <TextView
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id = "@+id/text_my_my"
+        		android:text="我的资料"
+        		android:textSize ="16sp"
+        		android:textColor="#556068" 
+        		android:layout_toRightOf="@id/ic_my_my"
+        		android:layout_centerVertical="true"
+        		android:layout_marginLeft = "10dp"
+        		android:layout_marginRight = "16dp"
+	            />
+	        <ImageView 
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id = "@+id/ic_my_my_next"
+        		android:src = "@drawable/ic_my_next"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+	            />
+	        <View 
+			    android:id="@+id/hexian"
+			    android:layout_height="1px" 
+			    android:background="#ebebeb" 
+			    android:layout_width="fill_parent"
+			    android:layout_alignParentBottom="true"/>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	       	android:layout_width="match_parent"
+        	android:layout_height="60dp"
+        	android:gravity="center_vertical"
+        	>
+	        <ImageView 
+	            android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:id = "@+id/ic_my_shoucang"
+        		android:src = "@drawable/ic_my_shoucang"
+        		android:layout_marginLeft = "5dp"
+        		android:layout_centerVertical="true"
+        		/>
+	        <TextView
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id = "@+id/text_my_shoucang"
+        		android:text="我的收藏"
+        		android:textSize ="16sp"
+        		android:textColor="#556068" 
+        		android:layout_toRightOf="@id/ic_my_shoucang"
+        		android:layout_centerVertical="true"
+        		android:layout_marginLeft = "10dp"
+        		android:layout_marginRight = "16dp"
+	            />
+	        <ImageView 
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id = "@+id/ic_my_shoucang_next"
+        		android:src = "@drawable/ic_my_next"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+	            />
+	        <View 
+			    android:layout_height="1px" 
+			    android:background="#ebebeb" 
+			    android:layout_width="fill_parent"
+			    android:layout_alignParentBottom="true"/>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	       	android:layout_width="match_parent"
+        	android:layout_height="60dp"
+        	android:gravity="center_vertical"
+        	>
+	        <ImageView 
+	            android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:id = "@+id/ic_my_history"
+        		android:src = "@drawable/ic_my_history"
+        		android:layout_marginLeft = "5dp"
+        		android:layout_centerVertical="true"
+        		/>
+	        <TextView
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id = "@+id/text_my_history"
+        		android:text="收听记录"
+        		android:textSize ="16sp"
+        		android:textColor="#556068" 
+        		android:layout_toRightOf="@id/ic_my_history"
+        		android:layout_centerVertical="true"
+        		android:layout_marginLeft = "10dp"
+        		android:layout_marginRight = "19dp"
+	            />
+	        <ImageView 
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id = "@+id/ic_my_history_next"
+        		android:src = "@drawable/ic_my_next"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+	            />
+	        <View 
+			    android:layout_height="1px" 
+			    android:background="#ebebeb" 
+			    android:layout_width="fill_parent"
+			    android:layout_alignParentBottom="true"/>
+	    </RelativeLayout>
+	    <RelativeLayout 
+	       	android:layout_width="match_parent"
+        	android:layout_height="60dp"
+        	android:gravity="center_vertical"
+        	>
+	        <ImageView 
+	            android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:id = "@+id/ic_my_fenxiang"
+        		android:src = "@drawable/ic_my_fenxiang"
+        		android:layout_marginLeft = "5dp"
+        		android:layout_centerVertical="true"
+        		/>
+	        <TextView
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id = "@+id/text_my_fenxiang"
+        		android:text="邀请好友"
+        		android:textSize ="16sp"
+        		android:textColor="#556068" 
+        		android:layout_toRightOf="@id/ic_my_fenxiang"
+        		android:layout_centerVertical="true"
+        		android:layout_marginLeft = "10dp"
+        		android:layout_marginRight = "19dp"
+	            />
+	        <ImageView 
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id = "@+id/ic_my_fenxiang_next"
+        		android:src = "@drawable/ic_my_next"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+	            />
+	        <View 
+			    android:layout_height="1px" 
+			    android:background="#ebebeb" 
+			    android:layout_width="fill_parent"
+			    android:layout_alignParentBottom="true"/>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	       	android:layout_width="match_parent"
+        	android:layout_height="60dp"
+        	android:gravity="center_vertical"
+        	>
+	        <ImageView 
+	            android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:id = "@+id/ic_my_shezhi"
+        		android:src = "@drawable/ic_my_shezhi"
+        		android:layout_marginLeft = "5dp"
+        		android:layout_centerVertical="true"
+        		/>
+	        <TextView
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id = "@+id/text_my_shezhi"
+        		android:text="系统设置"
+        		android:textSize ="16sp"
+        		android:textColor="#556068" 
+        		android:layout_toRightOf="@id/ic_my_shezhi"
+        		android:layout_centerVertical="true"
+        		android:layout_marginLeft = "10dp"
+        		android:layout_marginRight = "19dp"
+	            />
+	        <ImageView 
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id = "@+id/ic_my_shezhi_next"
+        		android:src = "@drawable/ic_my_next"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+	            />
+	        <View 
+			    android:layout_height="1px" 
+			    android:background="#ebebeb" 
+			    android:layout_width="fill_parent"
+			    android:layout_alignParentBottom="true"/>
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

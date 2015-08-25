@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogbgstyle"
+     android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_gender_male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/myInfo_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="男" />
+    <View 
+	    android:id="@+id/hexian"
+	    android:layout_height="1px" 
+	    android:background="#ebebeb" 
+	    android:layout_width="fill_parent"
+	   />
+	<TextView
+	    android:id="@+id/dialog_gender_female"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/myInfo_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:text="女" />
+	
+</LinearLayout>

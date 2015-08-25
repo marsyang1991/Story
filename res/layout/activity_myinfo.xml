@@ -1,0 +1,353 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F4F5"
+   >
+
+  <RelativeLayout
+        android:id="@+id/titlerelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FD8914"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout 
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/myinfo_back"
+            android:layout_marginLeft="@dimen/content_horizontal_margin"
+            android:layout_centerVertical="true">
+            <ImageView 
+                android:layout_width = "10dp"
+            	android:layout_height="20dp"
+            	android:src="@drawable/ic_left"
+            	/>
+            <TextView
+                android:layout_width = "wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text = "返回"
+            	android:layout_marginLeft="5dp"
+            	android:textSize = "16sp"
+            	android:textColor ="#ffffff"/>
+        </LinearLayout>      
+        <TextView
+            android:id="@+id/Login_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="我的资料"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+            android:textSize="19sp" 
+            />
+        <TextView
+            android:id="@+id/myinfo_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "保存"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight = "10dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+	<LinearLayout 
+	    android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+	    >
+	    <RelativeLayout
+	        android:layout_marginLeft="@dimen/content_horizontal_margin"
+        	android:layout_marginRight="@dimen/content_horizontal_margin"
+	        android:id="@+id/myinfo_touxiang"
+	       	android:layout_width = "match_parent"
+        	android:layout_height="94dp" >
+	        <TextView 
+	            android:layout_width = "wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="头像"
+        		android:textSize="16sp"
+        		android:textColor = "#556068"
+ 				android:layout_centerVertical="true"	
+        		/> 
+        	<ImageView 
+        	    android:layout_width ="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/touxiang_right"
+        		android:src = "@drawable/ic_right"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+        	    />
+        	<ImageView 
+        	    android:layout_width ="58dp"
+        		android:layout_height="58dp"
+        		android:scaleType="fitXY"
+        		android:layout_toLeftOf="@id/touxiang_right"
+        		android:id="@+id/myInfo_iv_touxiang"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:src="@drawable/ic_default_touxiang"
+        	    />
+        	<View 
+			    android:id="@+id/hexian"
+			    android:layout_height="1px" 
+			    android:background="#ebebeb" 
+			    android:layout_width="fill_parent"
+			    android:layout_alignParentBottom="true"/>   
+        </RelativeLayout>
+        
+	    <RelativeLayout
+	        android:layout_marginLeft="@dimen/content_horizontal_margin"
+        	android:layout_marginRight="@dimen/content_horizontal_margin"
+	        android:id="@+id/myinfo_zhanghao"
+	       	android:layout_width = "match_parent"
+        	android:layout_height="43dp" >
+	        <TextView 
+	            android:layout_width = "wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="账号"
+        		android:textSize="16sp"
+        		android:textColor = "#556068"
+ 				android:layout_centerVertical="true"	
+        		/> 
+        	<TextView 
+        	    android:layout_width ="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:textSize="14sp"
+        		android:textColor = "#9b9b9b"
+        		android:text = "12345667"
+        		android:id="@+id/tv_zhanghao"
+        	    />
+        	<View
+			    android:layout_height="1px" 
+			    android:background="#ebebeb" 
+			    android:layout_width="fill_parent"
+			    android:layout_alignParentBottom="true"/>   
+			    
+        	
+        </RelativeLayout>
+	    <RelativeLayout
+	        android:layout_marginLeft="@dimen/content_horizontal_margin"
+        	android:layout_marginRight="@dimen/content_horizontal_margin"
+	        android:id="@+id/myinfo_mingzi"
+	       	android:layout_width = "match_parent"
+        	android:layout_height="43dp"
+        	android:focusable="true" 
+			android:focusableInTouchMode="true" >
+	        <TextView 
+	            android:layout_width = "wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="名字"
+        		android:textSize="16sp"
+        		android:textColor = "#556068"
+ 				android:layout_centerVertical="true"	
+        		/> 
+        	<ImageView 
+        	    android:layout_width ="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/mingzi_right"
+        		android:src = "@drawable/ic_right"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+        	    />
+        	<TextView 
+        	    android:layout_width ="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_toLeftOf="@id/mingzi_right"
+        		android:layout_marginRight="5dp"
+        		android:textSize="14sp"
+        		android:textColor = "#9b9b9b"
+        		android:text = "Brooks"
+        		android:layout_centerVertical="true"
+        		android:id="@+id/tv_mingzi"
+        	    />
+        	<View
+			    android:layout_height="1px" 
+			    android:background="#ebebeb" 
+			    android:layout_width="fill_parent"
+			    android:layout_alignParentBottom="true"/> 
+		 </RelativeLayout>  
+		 
+	   	 <RelativeLayout
+	   	     	android:layout_marginLeft="@dimen/content_horizontal_margin"
+        		android:layout_marginRight="@dimen/content_horizontal_margin"
+	        	android:id="@+id/myinfo_xingbie"
+	      	 	android:layout_width = "match_parent"
+        		android:layout_height="43dp" >
+	        <TextView 
+	            android:layout_width = "wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="性别"
+        		android:textSize="16sp"
+        		android:textColor = "#556068"
+ 				android:layout_centerVertical="true"	
+        		/> 
+        	<ImageView 
+        	    android:layout_width ="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/xingbie_right"
+        		android:src = "@drawable/ic_right"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+        	    />
+        	<TextView 
+        	    android:layout_width ="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_toLeftOf="@id/xingbie_right"
+        		android:layout_marginRight="5dp"
+        		android:textSize="14sp"
+        		android:textColor = "#9b9b9b"
+        		android:text = "女"
+        		android:layout_centerVertical="true"
+        		android:id="@+id/tv_xingbie"
+        	    />
+        	<View
+			    android:layout_height="1px" 
+			    android:background="#ebebeb" 
+			    android:layout_width="fill_parent"
+			    android:layout_alignParentBottom="true"/> 
+		 </RelativeLayout>  
+		 
+	   	<RelativeLayout
+	   	  	  	android:layout_marginLeft="@dimen/content_horizontal_margin"
+        		android:layout_marginRight="@dimen/content_horizontal_margin"
+	    	    android:id="@+id/myinfo_date"
+	       		android:layout_width = "match_parent"
+        		android:layout_height="43dp" >
+	        <TextView 
+	            android:layout_width = "wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="出生日期"
+        		android:textSize="16sp"
+        		android:textColor = "#556068"
+ 				android:layout_centerVertical="true"	
+        		/> 
+        	<ImageView 
+        	    android:layout_width ="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/date_right"
+        		android:src = "@drawable/ic_right"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+        	    />
+        	<TextView 
+        	    android:layout_width ="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_toLeftOf="@id/date_right"
+        		android:layout_marginRight="5dp"
+        		android:textSize="14sp"
+        		android:textColor = "#9b9b9b"
+        		android:text = "1988-1-11"
+        		android:layout_centerVertical="true"
+        		android:id="@+id/tv_date"
+        	    />
+        	<View
+			    android:layout_height="1px" 
+			    android:background="#ebebeb" 
+			    android:layout_width="fill_parent"
+			    android:layout_alignParentBottom="true"/> 
+		 </RelativeLayout>
+	</LinearLayout>	 
+	<LinearLayout 
+	    android:layout_width = "match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="vertical"
+       	android:background="#ffffff" 
+       	android:layout_marginTop="21dp">
+	 	<RelativeLayout
+   	  	  	android:layout_marginLeft="@dimen/content_horizontal_margin"
+       		android:layout_marginRight="@dimen/content_horizontal_margin"
+    	    android:id="@+id/myinfo_QQ"
+       		android:layout_width = "match_parent"
+       		android:layout_height="43dp" 
+       		android:focusable="true" 
+			android:focusableInTouchMode="true">
+        <TextView 
+            android:layout_width = "wrap_content"
+       		android:layout_height="wrap_content"
+       		android:text="QQ"
+       		android:textSize="16sp"
+       		android:textColor = "#556068"
+			android:layout_centerVertical="true"	
+       		/> 
+       	<ImageView 
+       	    android:layout_width ="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:id="@+id/QQ_right"
+       		android:src = "@drawable/ic_right"
+       		android:layout_alignParentRight="true"
+       		android:layout_centerVertical="true"
+       	    />
+       	<TextView 
+       	    android:layout_width ="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:layout_toLeftOf="@id/QQ_right"
+       		android:layout_marginRight="5dp"
+       		android:textSize="14sp"
+       		android:textColor = "#9b9b9b"
+       		android:text = "1234568"
+       		android:layout_centerVertical="true"
+       		android:id="@+id/tv_QQ"
+       	    />
+       	<View
+		    android:layout_height="1px" 
+		    android:background="#ebebeb" 
+		    android:layout_width="fill_parent"
+		    android:layout_alignParentBottom="true"/> 
+	 </RelativeLayout>
+	 
+	 	<RelativeLayout
+   	  	  	android:layout_marginLeft="@dimen/content_horizontal_margin"
+       		android:layout_marginRight="@dimen/content_horizontal_margin"
+    	    android:id="@+id/myinfo_youxiang"
+       		android:layout_width = "match_parent"
+       		android:layout_height="43dp"
+       		android:focusable="true" 
+			android:focusableInTouchMode="true" >
+        <TextView 
+            android:layout_width = "wrap_content"
+       		android:layout_height="wrap_content"
+       		android:text="邮箱"
+       		android:textSize="16sp"
+       		android:textColor = "#556068"
+			android:layout_centerVertical="true"	
+       		/> 
+       	<ImageView 
+       	    android:layout_width ="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:id="@+id/youxiang_right"
+       		android:src = "@drawable/ic_right"
+       		android:layout_alignParentRight="true"
+       		android:layout_centerVertical="true"
+       	    />
+       	<TextView 
+       	    android:layout_width ="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:layout_toLeftOf="@id/youxiang_right"
+       		android:layout_marginRight="5dp"
+       		android:textSize="14sp"
+       		android:textColor = "#9b9b9b"
+       		android:text = "1234568@qq.com"
+       		android:layout_centerVertical="true"
+       		android:id="@+id/tv_youxiang"
+       	    />
+       	<View
+		    android:layout_height="1px" 
+		    android:background="#ebebeb" 
+		    android:layout_width="fill_parent"
+		    android:layout_alignParentBottom="true"/> 
+	 </RelativeLayout>
+	 	
+	 </LinearLayout>
+	
+</LinearLayout>

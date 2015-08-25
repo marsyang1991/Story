@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlerelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FD8914"
+        android:gravity="center_vertical"
+        >
+		<LinearLayout
+		    android:id="@+id/titlebacklinearlayout"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+		    >
+		    <ImageView
+	            android:id="@+id/Login_back"
+	            android:layout_width="10dp"
+	            android:layout_height="20dp"
+	            android:paddingLeft="10dp"
+	            android:src="@drawable/ic_left"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginBottom="10dp" />
+			<TextView
+	            android:id="@+id/Login_title_back"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:text="返回"
+	            android:textColor="#ffffff"
+	            android:textSize="16sp" 
+	            android:layout_marginTop="10dp"
+	            android:layout_marginBottom="10dp"
+	            android:layout_marginLeft="5dp"/>
+		</LinearLayout>      
+        <TextView
+            android:id="@+id/Login_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="新用户注册"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+            android:textSize="19sp" 
+            />
+    </RelativeLayout>
+    <com.yang.MyView.MyEditText
+            android:id="@+id/register_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"	 
+            android:hint="请输入手机号"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft = "30dp"
+            android:layout_marginRight = "30dp"
+            android:textColorHint="#B5B5B5"
+            android:textColor="#747474"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:textSize="14sp"
+            android:background="@null" />
+    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"	 
+	        android:layout_marginTop="37dp"
+	        android:layout_marginLeft = "30dp"
+	        android:layout_marginRight = "30dp"
+        >
+        <Button
+            android:id="@+id/register_getSMSbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "获取验证码"
+            android:textColor="#FD8914"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/yanzhemabuttonstyle"
+            />
+        <com.yang.MyView.MyEditText
+            android:id="@+id/register_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"	 
+            android:hint="请输入短信验证码"
+            android:textColorHint="#B5B5B5"
+            android:textColor="#747474"
+            android:singleLine="true"
+            android:inputType="numberSigned"
+            android:textSize="14sp" 
+            android:layout_toLeftOf="@id/register_getSMSbt"
+            android:layout_alignBottom="@id/register_getSMSbt"
+            android:background="@null"/>
+    </RelativeLayout>
+    <com.yang.MyView.MyEditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"	 
+            android:hint="请输入6-20位密码(字母、数字、基本字符)"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft = "30dp"
+            android:layout_marginRight = "30dp"
+            android:textColorHint="#B5B5B5"
+            android:textColor="#747474"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:background="@null"         
+	/>
+	<Button 
+	    	android:id="@+id/register_okbt"
+	    	android:layout_width="match_parent"
+	        android:layout_height="wrap_content"	 
+	        android:layout_marginTop="39dp"
+	        android:layout_marginLeft = "30dp"
+	        android:layout_marginRight = "30dp"
+	        android:text="完成注册"
+	        android:textColor="#ffffff"
+	        android:background="@drawable/normalbuttonstyle"
+	    />
+	<LinearLayout
+	    	android:layout_width="match_parent"
+	        android:layout_height="wrap_content"	 
+	        android:layout_marginTop="21dp"
+	        android:layout_marginLeft = "30dp"
+	        android:layout_marginRight = "30dp"
+	        android:orientation="horizontal">
+	    	<CheckBox 
+		   		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:checked="true"
+		        android:button="@null"
+		        android:id="@+id/register_cb"
+		        android:background="@drawable/checkboxstyle"
+	    	/>
+	    	<TextView
+	    	    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		      	android:text="我已阅读并接受"
+		        android:textColor="#B5B5B5"
+		        android:textSize="14sp"
+		        android:layout_marginLeft="2dp"
+	    	    />
+	    	<TextView
+	    	    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="使用条款和隐私政策"
+		        android:textColor="#FD8914"
+		        android:textSize="14sp"
+		     	android:id="@+id/register_tiaokuan"
+		        android:layout_marginLeft="2dp"
+	    	    />
+	</LinearLayout>
+	
+</LinearLayout>

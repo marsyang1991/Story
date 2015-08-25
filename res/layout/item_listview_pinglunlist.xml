@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:id="@+id/pinglun_bg"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+   		android:layout_height="match_parent"
+   		android:orientation="horizontal"
+        >
+	    <ImageView
+	        android:layout_width="26dp"
+	        android:layout_height="26dp"
+	        android:background="@drawable/bg_baiyuan_small"
+	        android:src="@drawable/ic_default_touxiang"
+	        android:layout_margin="5dp"
+	        android:id="@+id/pinglun_image"/>
+	    <LinearLayout 
+		    android:id="@+id/pinglun_ll_yonghu"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       	android:orientation="vertical"      	
+		    >
+		    <TextView 
+		        android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:id="@+id/pinglun_tv_username"
+	        	android:textColor="#f68720"
+	        	android:textSize="14sp"
+	        	android:text="小倩Qian"
+		        />
+		    <TextView 
+		        android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:id="@+id/pinglun_tv_content"
+	        	android:textColor="#000000"
+	        	android:textSize="14sp"
+	        	android:text="哈哈，很喜欢这个笑话哦!"
+		        />
+		    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+   			android:layout_height="match_parent"
+   			android:orientation="horizontal"
+   			android:gravity="right"
+	        >
+
+			<TextView
+			    android:id="@+id/pinglun_time"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="2月1日 下午18:02"
+			    android:textColor="#616161"
+			    android:textSize="13sp" />
+			
+		</LinearLayout>
+	</LinearLayout>
+	<View 
+	    android:id="@+id/hexian"
+	    android:layout_height="1px" 
+	    android:background="#ebebeb" 
+	    android:layout_width="fill_parent"
+	    android:layout_marginTop="10dp"/>
+</LinearLayout>

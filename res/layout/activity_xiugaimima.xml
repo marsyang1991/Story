@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+     <RelativeLayout
+        android:id="@+id/titlerelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FD8914"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout 
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/xiugai_back"
+            android:layout_marginLeft="@dimen/content_horizontal_margin"
+            android:layout_centerVertical="true">
+            <ImageView 
+                android:layout_width = "10dp"
+            	android:layout_height="20dp"
+            	android:src="@drawable/ic_left"
+            	/>
+            <TextView
+                android:layout_width = "wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text = "返回"
+            	android:layout_marginLeft="5dp"
+            	android:textSize = "16sp"
+            	android:textColor ="#ffffff"/>
+        </LinearLayout>      
+        <TextView
+            android:id="@+id/Login_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="修改密码"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+            android:textSize="19sp" 
+            />
+    </RelativeLayout>
+    <LinearLayout 
+       android:layout_width = "wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="38dp"
+       android:layout_marginLeft="20dp"
+       
+        >
+        <TextView 
+            android:layout_width = "wrap_content"
+       		android:layout_height="wrap_content"
+       		android:text="已绑定手机号:"
+       		android:textColor="#747474"
+       		android:textSize="18sp"/>
+
+        <TextView 
+         	android:layout_width = "wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/xiugai_dianhua"
+    		android:textColor="#747474"
+    		android:textSize="14sp"
+    		android:text  = "18612553972"
+    		android:background="@drawable/xiugai_dianhuastyle"    		
+    		/>
+        
+ 
+    </LinearLayout>
+     <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"	 
+	        android:layout_marginTop="38dp"
+	        android:layout_marginLeft = "20dp"
+	        android:layout_marginRight = "20dp"
+	        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="验证码:"
+	        android:textSize="18sp"
+	        android:textColor="#747474"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/xiugai_tv_yanzhengma"/>
+        <Button
+            android:id="@+id/xiugai_getSMSbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"            
+            android:text = "获取验证码"
+            android:textColor="#FD8914"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/yanzhemabuttonstyle"
+            />
+        <com.yang.MyView.MyEditText
+            android:id="@+id/xiugai_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"	 
+            android:hint="请输入短信验证码"
+            android:textColorHint="#B5B5B5"
+            android:textColor="#747474"
+            android:singleLine="true"
+            android:inputType="numberSigned"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="14sp" 
+            android:layout_toRightOf="@id/xiugai_tv_yanzhengma"
+            android:layout_toLeftOf="@id/xiugai_getSMSbt"
+            android:layout_alignBottom="@id/register_getSMSbt"
+            android:background="@null"/>
+    </RelativeLayout>
+    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"	 
+	        android:layout_marginTop="38dp"
+	        android:layout_marginLeft = "20dp"
+	        android:layout_marginRight = "20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="设置新密码:"
+	        android:textSize="18sp"
+	        android:textColor="#747474"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/xiugai_tv_mima"/>
+        <com.yang.MyView.MyEditText
+            android:id="@+id/xiugai_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"	 
+            android:hint="请输入6-20位密码"
+            android:textColorHint="#B5B5B5"
+            android:textColor="#747474"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"            
+            android:layout_marginRight="5dp"
+            android:textSize="14sp" 
+            android:layout_toRightOf="@id/xiugai_tv_mima"
+            android:background="@null"/>
+    </RelativeLayout>
+	<Button 
+	    android:id="@+id/xiugai_bt_wancheng"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+	    android:layout_marginLeft = "20dp"
+	    android:layout_marginRight = "20dp"
+	    android:textSize="18sp"
+	    android:textColor="#ffffff"
+	    android:text="完成修改"
+	    android:background="@drawable/normalbuttonstyle"
+	    />
+</LinearLayout>

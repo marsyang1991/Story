@@ -1,0 +1,60 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="201dp"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="vertical"
+	    android:background="#D9D9D9"
+	    android:id="@+id/pop_layout"
+    >
+      <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#ffffff"
+	        android:text="选择头像"
+	        android:textSize="14sp"
+	        android:textColor="#A9A9A9"
+	        android:gravity="center" 
+	        android:layout_weight="1"/>
+      <TextView
+          	android:background="#ffffff"
+	        android:layout_marginTop="1dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="拍照"
+	        android:textSize="16sp"
+	        android:textColor="#6d6e6d"
+	        android:id="@+id/xuanzetouxiang_camare"
+	        android:gravity ="center" 
+	        android:layout_weight="1"/>
+      <TextView
+         	android:background="#ffffff"
+          	android:layout_marginTop="1dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="从相册选择"
+	        android:textSize="16sp"
+	        android:textColor="#6d6e6d"
+	        android:id="@+id/xuanzetouxiang_galary"
+	        android:gravity ="center" 
+	        android:layout_weight="1"/>
+      <TextView
+        	android:background="#ffffff"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="取消"
+	        android:layout_marginTop="7dp"
+	        android:textSize="16sp"
+	        android:textColor="#6d6e6d"
+	        android:id="@+id/xuanzetouxiang_cancel"
+	        android:gravity ="center" 
+	        android:layout_weight="1"/>
+
+</LinearLayout>
+</RelativeLayout>
