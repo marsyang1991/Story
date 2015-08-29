@@ -3,11 +3,12 @@ package com.yang.MYModel;
 public class CourseModel {
 	private String name;
 	private VersionModel parent;
+
 	public CourseModel() {
 		super();
 	}
 
-	public CourseModel(String name,VersionModel parent) {
+	public CourseModel(String name, VersionModel parent) {
 		super();
 		this.name = name;
 		this.parent = parent;
@@ -20,7 +21,6 @@ public class CourseModel {
 	public void setName(String name) {
 		this.name = name;
 	}
-
 
 	public VersionModel getParent() {
 		return parent;

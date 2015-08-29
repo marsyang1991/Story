@@ -1,14 +1,18 @@
 package com.yang.MYModel;
+
 import java.util.List;
+
 public class GradeModel {
 	private String name;
 	private List<VersionModel> versionList;
 	private CityModel parent;
+
 	public GradeModel() {
 		super();
 	}
 
-	public GradeModel(String name, List<VersionModel> versionList,CityModel parent) {
+	public GradeModel(String name, List<VersionModel> versionList,
+			CityModel parent) {
 		super();
 		this.name = name;
 		this.versionList = versionList;
@@ -18,7 +22,7 @@ public class GradeModel {
 	public String getName() {
 		return name;
 	}
-	
+
 	public CityModel getParent() {
 		return parent;
 	}
@@ -42,6 +46,6 @@ public class GradeModel {
 	@Override
 	public String toString() {
 		return "CityModel [name=" + name + ", versionList=" + versionList
-				+ "parent="+parent+"]";
+				+ "parent=" + parent + "]";
 	}
 }

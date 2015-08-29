@@ -9,7 +9,7 @@ public class Pinglun {
 	int commentId;
 	int fileId;
 	int uid;
-	
+
 	public Pinglun() {
 		super();
 	}
@@ -77,7 +77,5 @@ public class Pinglun {
 	public void setUid(int uid) {
 		this.uid = uid;
 	}
-	
-	
-	
+
 }

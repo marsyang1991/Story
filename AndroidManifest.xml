@@ -28,11 +28,13 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher_new"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        >
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/app_name" 
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" 
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,47 +45,55 @@
 			android:name="cn.smssdk.SMSSDKUIShell"
 			android:configChanges="keyboardHidden|orientation|screenSize"
 			android:theme="@android:style/Theme.Translucent.NoTitleBar"
-			android:windowSoftInputMode="stateHidden|adjustResize" />
+			android:windowSoftInputMode="stateHidden|adjustResize" 
+			android:screenOrientation="portrait"/>
         <activity
             android:name=".SetTextbookActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  
+            android:screenOrientation="portrait">
             
         </activity>
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  
+            android:screenOrientation="portrait">
             
         </activity>
         <activity
             android:name=".FrameActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" 
+            android:screenOrientation="portrait" >
             
         </activity>
         <activity
             android:name=".XiugaimimaActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  
+            android:screenOrientation="portrait">
             
         </activity>
         <activity
             android:name=".ShouyeActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+            android:screenOrientation="portrait"  >
             
         </activity>
         <activity
             android:name=".ShoucangActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+            android:screenOrientation="portrait"  >
             
         </activity>
         <activity
             android:name=".ShezhiActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  
+            android:screenOrientation="portrait">
             
         </activity>
         <activity
@@ -95,38 +105,61 @@
         <activity
             android:name=".MyActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  
+            android:screenOrientation="portrait">
             
         </activity>
         <activity
             android:name=".RegisterActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" 
+            android:screenOrientation="portrait" >
             
         </activity>
         <activity
             android:name=".TiaokuanActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  
+            android:screenOrientation="portrait">
             
         </activity>
          <activity
             android:name=".SearchActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"  >
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" 
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name=".SelectPicPopupWindow" android:theme="@style/MyDialogStyleBottom" /> 
-        <activity android:name="com.yang.story.MyInfoActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-        <activity android:name="com.yang.story.AboutActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-    	<activity android:name="com.yang.story.ZhaohuimimaActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-    	<activity android:name="com.yang.story.KemuliebiaoActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-        <activity android:name="com.yang.story.XiangqingActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-        <activity android:name="com.yang.story.ZuixinshoufaActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-         <activity android:name="com.yang.story.ZuireActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-          <activity android:name="com.yang.story.SetProvinceActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-           <activity android:name="com.yang.story.SettingBook1Activity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-    	  <activity android:name="com.yang.story.SettingBook2Activity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
-           
+        <activity android:name=".SelectPicPopupWindow" android:screenOrientation="portrait" android:theme="@style/MyDialogStyleBottom" /> 
+        <activity android:name="com.yang.story.MyInfoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+        <activity android:name="com.yang.story.AboutActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+    	<activity android:name="com.yang.story.ZhaohuimimaActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+    	<activity android:name="com.yang.story.KemuliebiaoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+        <activity android:name="com.yang.story.XiangqingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+        <activity android:name="com.yang.story.ZuixinshoufaActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+         <activity android:name="com.yang.story.ZuireActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+          <activity android:name="com.yang.story.SetProvinceActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+          <activity android:name="com.yang.story.SettingBook1Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+    	  <activity android:name="com.yang.story.SettingBook2Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
+          <activity
+			 android:name="com.mob.tools.MobUIShell"
+			 android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			 android:configChanges="keyboardHidden|orientation|screenSize"
+			 android:screenOrientation="portrait"
+			 android:windowSoftInputMode="stateHidden|adjustResize" >
+			 <intent-filter>
+				 <data android:scheme="tencent100371282" />
+				 <action android:name="android.intent.action.VIEW" />
+				 <category android:name="android.intent.category.BROWSABLE" />
+				 <category android:name="android.intent.category.DEFAULT" />
+			 </intent-filter>
+			</activity>
+			 
+           <activity
+			 android:name=".wxapi.WXEntryActivity"
+			 android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			 android:configChanges="keyboardHidden|orientation|screenSize"
+			 android:exported="true"
+			 android:screenOrientation="portrait" /> 
     </application>
 
 </manifest>

@@ -58,8 +58,8 @@
     <SinaWeibo
         Id="1"
         SortId="1"
-        AppKey="568898243"
-        AppSecret="38a4f8204cc784f81f9f0daaf31e02e3"
+        AppKey="4213723990 "
+        AppSecret="155fc85c53ba659b0d6d506917446d3b"
         RedirectUrl="http://www.sharesdk.cn"
         ShareByAppClient="false"
         Enable="true" />
@@ -80,8 +80,8 @@
     <Wechat
         Id="4"
         SortId="4"
-        AppId="wx4868b35061f87885"
-        AppSecret="64020361b8ec4c99936c0e3999a9f249"
+        AppId="wxc479073fcff71c0a"
+        AppSecret="b37d82e818f55153706fbcfbc4a5b446"
         BypassApproval="false"
         Enable="true" />
     
@@ -104,8 +104,8 @@
 	<QQ
         Id="7"
         SortId="7"
-        AppId="100371282"
-        AppKey="aed9b0303e3ed1e27bae87c33761161d"
+        AppId="1104816490"
+        AppKey="bASBTKsi9FltNS7F"
         ShareByAppClient="true"
         Enable="true" />
     

@@ -2,17 +2,17 @@ package com.yang.MYModel;
 
 import java.util.List;
 
-
-
 public class VersionModel {
 	private String name;
 	private List<CourseModel> courseList;
 	private GradeModel parent;
+
 	public VersionModel() {
 		super();
 	}
 
-	public VersionModel(String name, List<CourseModel> courseList,GradeModel parent) {
+	public VersionModel(String name, List<CourseModel> courseList,
+			GradeModel parent) {
 		super();
 		this.name = name;
 		this.courseList = courseList;
@@ -45,21 +45,18 @@ public class VersionModel {
 
 	@Override
 	public String toString() {
-		return "CityModel [name=" + name + ", courseList=" + courseList
-				+ "]";
+		return "CityModel [name=" + name + ", courseList=" + courseList + "]";
 	}
 
 	@Override
 	public boolean equals(Object o) {
-		VersionModel v = (VersionModel)o;
-		if(v.parent.equals(this.parent))
-		{
-			
-		}else {
+		VersionModel v = (VersionModel) o;
+		if (v.parent.equals(this.parent)) {
+
+		} else {
 			return false;
 		}
 		return super.equals(o);
 	}
-	
-	
+
 }

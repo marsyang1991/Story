@@ -5,7 +5,7 @@ import java.util.List;
 public class CityModel {
 	private String name;
 	private List<GradeModel> gradeList;
-	
+
 	public CityModel() {
 		super();
 	}

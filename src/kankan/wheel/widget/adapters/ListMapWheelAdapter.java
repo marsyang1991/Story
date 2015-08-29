@@ -20,35 +20,37 @@ import java.util.Map;
 
 import android.content.Context;
 
-
 public class ListMapWheelAdapter extends AbstractWheelTextAdapter {
-    
-    // items
-    private List<Map<String,String>> items;
 
-    /**
-     * Constructor
-     * @param context the current context
-     * @param items the items
-     */
-    public ListMapWheelAdapter(Context context, List<Map<String,String>> items) {
-        super(context);
-        
-        //setEmptyItemResource(TEXT_VIEW_ITEM_RESOURCE);
-        this.items = items;
-    }
-    
-    @Override
-    public CharSequence getItemText(int index) {
-        if (index >= 0 && index < items.size()) {
-            String item = items.get(index).get("name");
-            return item.toString();
-        }
-        return null;
-    }
+	// items
+	private List<Map<String, String>> items;
 
-    @Override
-    public int getItemsCount() {
-        return items.size();
-    }
+	/**
+	 * Constructor
+	 * 
+	 * @param context
+	 *            the current context
+	 * @param items
+	 *            the items
+	 */
+	public ListMapWheelAdapter(Context context, List<Map<String, String>> items) {
+		super(context);
+
+		// setEmptyItemResource(TEXT_VIEW_ITEM_RESOURCE);
+		this.items = items;
+	}
+
+	@Override
+	public CharSequence getItemText(int index) {
+		if (index >= 0 && index < items.size()) {
+			String item = items.get(index).get("name");
+			return item.toString();
+		}
+		return null;
+	}
+
+	@Override
+	public int getItemsCount() {
+		return items.size();
+	}
 }

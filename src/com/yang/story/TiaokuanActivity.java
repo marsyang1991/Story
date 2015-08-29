@@ -1,8 +1,9 @@
 package com.yang.story;
+
 import android.app.Activity;
 import android.os.Bundle;
 
-public class TiaokuanActivity extends Activity{
+public class TiaokuanActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -10,6 +11,5 @@ public class TiaokuanActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 	}
-	
-	
+
 }

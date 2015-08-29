@@ -2,7 +2,7 @@ package com.yang.MYModel;
 
 import java.io.Serializable;
 
-public class Textbook implements Serializable{
+public class Textbook implements Serializable {
 	/**
 	 * 
 	 */
@@ -12,19 +12,37 @@ public class Textbook implements Serializable{
 	String version;
 	int versionId;
 	String course;
-	int courseId;
+	int subjectID;
 	String grade;
 	int gradeId;
-	int  isBixiu;//1为必修，2为选修
-	int subversion;//1为上册，2为下册
-	int chapterID;
+	int isBixiu;// 1为必修，0为选修
+	int subversion;// 1为上册，2为下册
+	int bookID;
+	String bookName;
 	
-	public int getChapterID() {
-		return chapterID;
+
+	public int getSubjectID() {
+		return subjectID;
 	}
 
-	public void setChapterID(int chapterID) {
-		this.chapterID = chapterID;
+	public void setSubjectID(int subjectID) {
+		this.subjectID = subjectID;
+	}
+
+	public int getBookID() {
+		return bookID;
+	}
+
+	public void setBookID(int bookID) {
+		this.bookID = bookID;
+	}
+
+	public String getBookName() {
+		return bookName;
+	}
+
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
 	}
 
 	public Textbook() {
@@ -42,28 +60,35 @@ public class Textbook implements Serializable{
 	public String getCity() {
 		return city;
 	}
+
 	public void setCity(String city) {
 		this.city = city;
 	}
+
 	public String getVersion() {
 		return version;
 	}
+
 	public void setVersion(String version) {
 		this.version = version;
 	}
+
 	public String getCourse() {
 		return course;
 	}
+
 	public void setCourse(String course) {
 		this.course = course;
 	}
+
 	public String getGrade() {
 		return grade;
 	}
+
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
-	
+
 	public int getVersionId() {
 		return versionId;
 	}
@@ -72,12 +97,12 @@ public class Textbook implements Serializable{
 		this.versionId = versionId;
 	}
 
-	public int getCourseId() {
-		return courseId;
+	public int getSubjectId() {
+		return subjectID;
 	}
 
-	public void setCourseId(int courseId) {
-		this.courseId = courseId;
+	public void setSubjectId(int courseId) {
+		this.subjectID = courseId;
 	}
 
 	public int getGradeId() {
@@ -106,11 +131,13 @@ public class Textbook implements Serializable{
 
 	@Override
 	public boolean equals(Object o) {
-		Textbook book = (Textbook)o;
-		if(this.city.equals(book.city)&&this.course.equals(book.course)&&this.grade.equals(book.grade)&&this.version.equals(book.version))
+		Textbook book = (Textbook) o;
+		if (this.city.equals(book.city) && this.course.equals(book.course)
+				&& this.grade.equals(book.grade)
+				&& this.version.equals(book.version))
 			return true;
-		else 
+		else
 			return false;
 	}
-	
+
 }
